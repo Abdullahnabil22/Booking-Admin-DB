@@ -12,4 +12,8 @@ export class HostApiService {
   getAllHosts():Observable<Host[]>{
     return this.httpclient.get<Host[]>('http://localhost:3000/host')
   }
+  deleteHost(id:number): Observable<any>{
+    return this.httpclient.delete(`http://localhost:3000/host/${id}`)
+  }
+
 }
