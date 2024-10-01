@@ -1,1 +1,13 @@
-<p>approved-list works!</p>
+<div class='row '>
+  @for(onehost of Host ;track onehost.id){
+    <div class="card col-6 m-4" style="width: 18rem;">
+      <img [src]="onehost.images" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{onehost.name.en}}</h5>
+        <!-- <p class="card-text">{{}}</p> -->
+        <button onclick="deleteHost(id)">Details</button>
+      </div>
+    </div>
+  }
+
+</div>

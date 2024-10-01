@@ -7,6 +7,7 @@ import { UsersListControlComponent } from './Components/users-list-control/users
 import { LoginComponent } from './Components/login/login.component';
 import { EarningChartComponent } from './Components/earning-chart/earning-chart.component';
 import { HotelsListComponent } from './Components/hotels-list/hotels-list.component';
+import { DetailsComponent } from './Components/details/details.component';
 
 export const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -18,4 +19,6 @@ export const routes: Routes = [
   { path: 'users-list-control', component: UsersListControlComponent },
   { path: 'visitors-chart', component: VisitorsChartComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'details', component: DetailsComponent },
+
 ];
